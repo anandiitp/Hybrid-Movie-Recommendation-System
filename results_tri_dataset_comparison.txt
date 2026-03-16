@@ -1,0 +1,34 @@
+Hybrid RS — Tri-Dataset Comparison
+========================================================================
+
+Metric         MovieLens Small (ml-la MovieLens 25M (ml-25m)   MovieLens 1M (ml-1m)
+------------------------------------------------------------------------
+RMSE                           0.9264                 2.0056                 0.9674
+MAE                            0.7142                 1.4923                 0.7668
+Precision                      0.0453                 0.0017                 0.0982
+Recall                         0.0511                 0.0310                 0.0986
+F1                             0.0480                 0.0032                 0.0984
+
+── Sampled Evaluation (1 pos + 99 neg) ──
+  MovieLens Small (ml-latest-small)
+    MRR            0.2828
+    Hit@10         0.4621
+    NDCG@10        0.3126
+    Hit@20         0.5376
+    NDCG@20        0.3318
+  MovieLens 25M (ml-25m)
+    MRR            0.1694
+    Hit@10         0.2640
+    NDCG@10        0.1661
+    Hit@20         0.5093
+    NDCG@20        0.2272
+  MovieLens 1M (ml-1m)
+    MRR            0.2987
+    Hit@10         0.5071
+    NDCG@10        0.3367
+    Hit@20         0.5764
+    NDCG@20        0.3544
+
+Dataset A: Users=610 | Items=9,724 | Train=70,585 | Val=15,125 | Test=15,126
+Dataset B: Users=80,869 | Items=13,198 | Train=140,000 | Val=30,000 | Test=30,000
+Dataset C: Users=6,040 | Items=3,706 | Train=700,146 | Val=150,031 | Test=150,032
